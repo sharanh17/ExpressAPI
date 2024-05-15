@@ -9,4 +9,9 @@ app.use(bodyParser.json());
 
 app.use('/api', taskRoutes);
 
+app.get('/', (req, res) => {
+    res.send('Welcome to the API');
+});
+
+
 module.exports = app;
