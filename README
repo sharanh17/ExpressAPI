@@ -1,0 +1,44 @@
+ Set up version control by initializing a Git repository in your project directory.
+  Install the Vercel extension for Visual Studio Code from the marketplace
+   Push your Express.js application code to a GitHub repository.
+   Use the Vercel extension in VS Code to deploy your project. Select the GitHub repository and choose the branch to deploy.
+    Follow the prompts to configure deployment settings such as the project name and domain.
+     Once deployment is initiated, monitor the process through the Vercel extension or the Vercel dashboard
+
+    Working :
+    1)Paste the vercel deployed link in postman 
+    https://express-itfr6y46e-sharans-projects-afbc16c7.vercel.app/ 
+    2) To createTask add /api/tasks and make POST request with body containing
+    title and description
+    Eg: 
+    {
+  "title": "Sample Task",
+  "description": "This is a sample task description"
+}
+This is a POST call 
+
+3)To getAllTasks make api call to 
+ https://express-itfr6y46e-sharans-projects-afbc16c7.vercel.app/api/tasks
+ This is a GET call
+
+
+4)To update the status to completed add the :id to the api which we will get
+ https://express-itfr6y46e-sharans-projects-afbc16c7.vercel.app/api/tasks/:id
+
+ replace :id with the one you get in postman 
+ This Is a PUT call
+
+5)To delete the task mention the :id  iin the api call 
+https://express-itfr6y46e-sharans-projects-afbc16c7.vercel.app/api/tasks/:id
+
+This is a DELETE Call
+
+
+by default when you paste only the link 
+https://express-itfr6y46e-sharans-projects-afbc16c7.vercel.app/  the '/' path 
+it will show 
+ Welcome to the API
+
+
+
+ 
